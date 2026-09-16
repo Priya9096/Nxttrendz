@@ -1,0 +1,166 @@
+.orders-page {
+  min-height: 80vh;
+  padding: 8px 0 48px 0;
+  background-color: #ffffff;
+}
+
+.orders-content {
+  width: 92%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.orders-heading {
+  margin: 24px 0 26px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.orders-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+}
+
+.order-cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.order-card {
+  margin-bottom: 20px;
+  padding: 18px 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.order-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.order-card-number {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.order-card-date {
+  margin: 4px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+/* One set of colours for the four status words, used here and on the order
+   page — so "Cancelled" never means two different things. */
+.order-badge {
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.order-badge-placed {
+  background-color: #e0edff;
+  color: #1a56db;
+}
+
+.order-badge-shipped {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.order-badge-delivered {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.order-badge-cancelled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.order-card-thumbnail {
+  width: 54px;
+  height: 48px;
+  margin: 16px 0;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.order-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid #eef2f6;
+}
+
+.order-card-total {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.order-card-meta {
+  margin: 5px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.order-card-link {
+  padding: 9px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.orders-empty {
+  padding: 60px 24px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.orders-empty-heading {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+
+.orders-empty-text {
+  margin: 8px 0 18px 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.orders-empty-link {
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 575px) {
+  .orders-heading {
+    font-size: 26px;
+  }
+}

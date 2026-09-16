@@ -1,0 +1,279 @@
+.checkout-page {
+  min-height: 80vh;
+  padding: 8px 0 48px 0;
+  background-color: #ffffff;
+}
+
+.checkout-content {
+  width: 92%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.checkout-heading {
+  margin: 24px 0 26px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.checkout-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.checkout-card {
+  margin-bottom: 22px;
+  padding: 22px 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.checkout-card-heading {
+  margin: 0 0 18px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* --- the six boxes -------------------------------------------------------- */
+
+.address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 22px;
+}
+
+.address-field {
+  grid-column: span 2;
+  margin-bottom: 14px;
+}
+
+.address-field-half {
+  grid-column: span 1;
+  margin-bottom: 14px;
+}
+
+.checkout-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.checkout-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  outline: none;
+}
+
+.checkout-input:focus {
+  border-color: #6d1d9c;
+}
+
+.checkout-error {
+  margin: 6px 0 0 0;
+  color: #d93025;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+/* --- payment -------------------------------------------------------------- */
+
+.payment-option input {
+  margin-top: 2px;
+  accent-color: #6d1d9c;
+}
+
+.payment-option {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.payment-option:last-child {
+  margin-bottom: 0;
+}
+
+.payment-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.payment-title {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.payment-note {
+  margin-top: 3px;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+/* --- the summary on the right --------------------------------------------- */
+
+.summary-items {
+  margin: 0 0 16px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.summary-item-image {
+  width: 52px;
+  height: 46px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.summary-item-text {
+  margin-left: 12px;
+}
+
+.summary-item-title {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summary-item-meta {
+  margin: 4px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.summary-row-label,
+.summary-row-value {
+  margin: 4px 0;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.summary-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.summary-total-label,
+.summary-total-value {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.place-order-btn {
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #6d1d9c;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.place-order-btn:disabled {
+  background-color: #c8b3d6;
+  cursor: not-allowed;
+}
+
+.back-to-cart {
+  display: block;
+  margin-top: 14px;
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-align: center;
+}
+
+/* --- nothing to buy ------------------------------------------------------- */
+
+.checkout-empty {
+  text-align: center;
+}
+
+.checkout-empty-text {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.checkout-empty-link {
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 991px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .address-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .address-field,
+  .address-field-half {
+    grid-column: span 1;
+  }
+
+  .checkout-heading {
+    font-size: 26px;
+  }
+}

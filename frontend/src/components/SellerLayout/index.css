@@ -1,0 +1,151 @@
+/* The frame every seller screen sits in, plus the pieces the dashboard, the
+   product list and the product form all reuse: .seller-card, .seller-btn-*,
+   .seller-field. */
+
+.seller-page {
+  min-height: 80vh;
+  padding: 8px 0 48px 0;
+  background-color: #ffffff;
+}
+
+.seller-page-content {
+  width: 92%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.seller-heading {
+  margin: 24px 0 0 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.seller-subtitle {
+  margin: 8px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.seller-tabs {
+  display: flex;
+  margin: 22px 0 26px 0;
+  padding: 0;
+  border-bottom: 1px solid #e2e8f0;
+  list-style-type: none;
+}
+
+.seller-tab {
+  margin-right: 28px;
+}
+
+.seller-tab-link {
+  display: inline-block;
+  padding: 8px 2px 12px 2px;
+  border-bottom: 3px solid transparent;
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.seller-tab-link-active {
+  border-bottom-color: #6d1d9c;
+  color: #6d1d9c;
+  font-weight: 600;
+}
+
+/* --- pieces the seller screens share -------------------------------------- */
+
+.seller-card {
+  padding: 22px 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.seller-card-heading {
+  margin: 0 0 18px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.seller-btn-primary {
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  background-color: #6d1d9c;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.seller-btn-primary:disabled {
+  background-color: #c8b3d6;
+  cursor: not-allowed;
+}
+
+.seller-btn-secondary {
+  padding: 11px 22px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.seller-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+}
+
+.seller-error {
+  color: #b91c1c;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.seller-not-allowed {
+  text-align: center;
+}
+
+.seller-not-allowed-heading {
+  margin: 8px 0 0 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+
+.seller-not-allowed-text {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.seller-not-allowed-link {
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .seller-heading {
+    font-size: 26px;
+  }
+
+  .seller-tabs {
+    overflow-x: auto;
+  }
+}

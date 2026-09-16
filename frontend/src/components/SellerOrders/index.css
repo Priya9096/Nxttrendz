@@ -1,0 +1,224 @@
+/* The four status colours (.order-badge-*) live in MyOrders/index.css — the
+   same words, coloured the same way, on the buyer's screens and this one. */
+
+.sales-filters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sales-filter {
+  margin: 0 10px 10px 0;
+  padding: 8px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  background-color: #ffffff;
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sales-filter-active {
+  border-color: #6d1d9c;
+  background-color: #f5ebfd;
+  color: #6d1d9c;
+  font-weight: 600;
+}
+
+.sale-cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sale-card {
+  margin-bottom: 20px;
+  padding: 18px 22px;
+}
+
+.sale-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.sale-number {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sale-date {
+  margin: 5px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.sale-buyer {
+  color: #334155;
+  font-weight: 500;
+}
+
+.sale-top-right {
+  text-align: right;
+}
+
+.sale-total {
+  margin: 8px 0 0 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sale-payment {
+  margin: 3px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+/* --- the seller's own rows inside that order ------------------------------ */
+
+.sale-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sale-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.sale-item:last-child {
+  border-bottom: none;
+}
+
+.sale-item-image {
+  width: 62px;
+  height: 52px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.sale-item-text {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.sale-item-title {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sale-item-meta {
+  margin: 4px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.sale-item-subtotal {
+  margin: 0 18px 0 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.sale-item-action {
+  margin-left: 16px;
+  padding: 8px 16px;
+  border: 1px solid #93b4f7;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1a56db;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sale-item-action:disabled {
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* --- where it goes -------------------------------------------------------- */
+
+.sale-ship-to {
+  margin: 14px 0 0 0;
+  padding-top: 14px;
+  border-top: 1px solid #eef2f6;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.sale-ship-to-label {
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* --- nothing sold yet ----------------------------------------------------- */
+
+.sales-empty {
+  padding: 60px 24px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.sales-empty-heading {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+
+.sales-empty-text {
+  margin: 8px 0 18px 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+.sales-empty-link {
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .sale-item {
+    flex-wrap: wrap;
+  }
+
+  .sale-item-text {
+    width: calc(100% - 78px);
+    padding: 0 0 0 16px;
+  }
+
+  .sale-item-subtotal,
+  .sale-item-action {
+    margin: 12px 16px 0 0;
+  }
+}

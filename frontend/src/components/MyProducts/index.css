@@ -1,0 +1,238 @@
+.products-table {
+  padding: 0;
+}
+
+.product-rows {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.product-row {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.product-row:last-child {
+  border-bottom: none;
+}
+
+.product-row-image {
+  width: 78px;
+  height: 62px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.product-row-text {
+  flex: 1;
+  padding: 0 22px;
+}
+
+.product-row-title {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.product-row-meta {
+  margin: 6px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.product-row-stock {
+  color: #15803d;
+  font-weight: 500;
+}
+
+.product-row-out-of-stock {
+  color: #64748b;
+}
+
+.product-row-price {
+  margin: 0 26px 0 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.product-row-actions {
+  display: flex;
+  align-items: center;
+}
+
+.product-row-edit,
+.product-row-delete {
+  padding: 8px 20px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-row-edit {
+  border: 1px solid #93b4f7;
+  color: #1a56db;
+}
+
+.product-row-delete {
+  margin-left: 12px;
+  border: 1px solid #f2b8b5;
+  color: #d93025;
+}
+
+/* --- footer --------------------------------------------------------------- */
+
+.product-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 24px;
+  border-top: 1px solid #eef2f6;
+}
+
+.product-pagination-btn {
+  padding: 9px 20px;
+  border: 1px solid #d8c4e6;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.product-pagination-btn:disabled {
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.product-pagination-text {
+  margin: 0 22px;
+  color: #334155;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+/* --- empty view ----------------------------------------------------------- */
+
+.products-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 24px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.products-empty-heading {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 22px;
+}
+
+.products-empty-text {
+  margin: 8px 0 22px 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+/* --- the delete confirmation --------------------------------------------- */
+
+.delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(15, 23, 42, 0.45);
+}
+
+.delete-dialog {
+  width: 100%;
+  max-width: 460px;
+  padding: 26px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.delete-dialog-heading {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 20px;
+}
+
+.delete-dialog-text {
+  margin: 12px 0 24px 0;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.delete-dialog-title {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.delete-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-dialog-confirm {
+  margin-left: 12px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  background-color: #d93025;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.delete-dialog-confirm:disabled {
+  background-color: #eda29e;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+  .product-row {
+    flex-wrap: wrap;
+  }
+
+  .product-row-text {
+    padding: 0 0 0 14px;
+    width: calc(100% - 92px);
+  }
+
+  .product-row-price {
+    margin: 14px 0 0 0;
+    flex: 1;
+  }
+
+  .product-row-actions {
+    margin-top: 14px;
+  }
+}

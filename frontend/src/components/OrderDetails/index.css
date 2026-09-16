@@ -1,0 +1,234 @@
+/* The page frame (.orders-page, .orders-content, .orders-loader) and the four
+   status colours (.order-badge-*) are defined in MyOrders/index.css — the two
+   screens are the same list, opened at two depths, so they share them. */
+
+.order-banner {
+  margin: 24px 0 8px 0;
+  padding: 16px 20px;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  background-color: #e8f5ee;
+}
+
+.order-banner-heading {
+  margin: 0;
+  color: #15803d;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.order-banner-text {
+  margin: 6px 0 0 0;
+  color: #166534;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.order-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 24px 0 18px 0;
+}
+
+.order-title {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.order-placed-on {
+  margin: 6px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.order-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.order-card-block {
+  margin-bottom: 20px;
+  padding: 20px 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.order-block-heading {
+  margin: 0 0 16px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* --- items ---------------------------------------------------------------- */
+
+.order-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.order-item-image {
+  width: 66px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.order-item-text {
+  flex: 1;
+  padding: 0 16px;
+}
+
+.order-item-title {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.order-item-brand,
+.order-item-price {
+  margin: 4px 0 0 0;
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.order-item-right {
+  text-align: right;
+}
+
+.order-item-subtotal {
+  margin: 0 0 6px 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* --- address -------------------------------------------------------------- */
+
+.order-address-line {
+  margin: 0 0 5px 0;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+/* --- payment -------------------------------------------------------------- */
+
+.order-pay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.order-pay-label,
+.order-pay-value {
+  margin: 5px 0;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.order-pay-value-due {
+  margin: 5px 0;
+  color: #b45309;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.order-pay-value-paid {
+  margin: 5px 0;
+  color: #15803d;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.order-pay-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.order-pay-total-label,
+.order-pay-total-value {
+  margin: 0;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* --- cancel --------------------------------------------------------------- */
+
+.cancel-order-btn {
+  width: 100%;
+  padding: 12px 0;
+  border: 1px solid #f2b8b5;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #d93025;
+  font-family: 'Roboto';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cancel-order-btn:disabled {
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.back-to-orders {
+  display: block;
+  color: #6d1d9c;
+  font-family: 'Roboto';
+  font-size: 14px;
+  text-align: center;
+}
+
+.order-not-found {
+  margin: 0;
+  color: #b91c1c;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+
+@media screen and (max-width: 991px) {
+  .order-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .order-title {
+    font-size: 24px;
+  }
+}

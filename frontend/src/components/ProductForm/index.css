@@ -1,0 +1,87 @@
+.product-form {
+  padding: 24px 26px 28px 26px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+}
+
+.form-field {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-size: 15px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #6d1d9c;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-error {
+  margin: 6px 0 0 0;
+  color: #d93025;
+  font-family: 'Roboto';
+  font-size: 13px;
+}
+
+.form-checkbox-row {
+  display: flex;
+  align-items: center;
+  margin: 6px 0 22px 0;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  cursor: pointer;
+}
+
+.form-checkbox-row input {
+  accent-color: #6d1d9c;
+}
+
+.form-checkbox-text {
+  margin-left: 12px;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+}
+
+.form-cancel {
+  margin-left: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
