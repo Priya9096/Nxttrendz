@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_ID  = 'priyaankit'
+        DOCKER_ID  = 'priyaanki'
         BACKEND    = "${DOCKER_ID}/nxttrendz-backend"
         FRONTEND   = "${DOCKER_ID}/nxttrendz-frontend"
     }
