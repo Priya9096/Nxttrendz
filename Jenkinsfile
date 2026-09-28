@@ -19,6 +19,5 @@ pipeline {
                 sh 'docker push $FRONTEND:$BUILD_NUMBER'
             }
         } }
-    }
-    
+    }  
 }
