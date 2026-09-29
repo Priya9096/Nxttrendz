@@ -248,6 +248,7 @@ const AllProductsSection = () => {
 
   return (
     <div className="all-products-section">
+          <h1>Hi Products</h1>
       <FiltersGroup
         searchInput={searchInput}
         categoryOptions={categoryOptions}
