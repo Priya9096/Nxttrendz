@@ -1,12 +1,10 @@
 pipeline {
     agent any
-
     environment {
         DOCKER_ID = 'priyaankit'
         BACKEND   = "${DOCKER_ID}/nxttrendz-backend"
         FRONTEND  = "${DOCKER_ID}/nxttrendz-frontend"
     }
-
     stages {
         stage('Checkout') {
             steps {
@@ -14,7 +12,6 @@ pipeline {
                     url: 'https://github.com/Priya9096/Nxttrendz'
             }
         }
-
         stage('Build') {
             steps {
                 sh 'docker build -t $BACKEND:$BUILD_NUMBER ./backend'
